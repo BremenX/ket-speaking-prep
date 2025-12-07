@@ -1,9 +1,7 @@
 import { GoogleGenAI, Modality, Type } from "@google/genai";
 import type { DailyPlan, FullReport, SessionData } from "../types";
 
-// Vite requires import.meta.env for environment variables
-const apiKey = import.meta.env.VITE_API_KEY || '';
-const ai = new GoogleGenAI({ apiKey });
+const ai = new GoogleGenAI({ apiKey: process.env.API_KEY });
 
 // --- Audio Types & Cache ---
 
