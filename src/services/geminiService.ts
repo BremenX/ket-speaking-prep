@@ -1,7 +1,7 @@
 import { GoogleGenAI, Modality, Type } from "@google/genai";
-import { DailyPlan, FullReport, SessionData } from "../types";
+import type { DailyPlan, FullReport, SessionData } from "../types";
 
-// To this (Vite requires import.meta.env):
+// Vite requires import.meta.env for environment variables
 const apiKey = import.meta.env.VITE_API_KEY || '';
 const ai = new GoogleGenAI({ apiKey });
 

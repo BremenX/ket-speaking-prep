@@ -21,7 +21,7 @@ const ScoreChart = ({ scoreA, scoreB }: { scoreA: number, scoreB: number }) => {
                     <YAxis domain={[0, 5]} />
                     <Tooltip cursor={{fill: 'transparent'}} />
                     <Bar dataKey="score" radius={[8, 8, 0, 0]}>
-                        {data.map((entry, index) => (
+                        {data.map((_, index) => (
                             <Cell key={`cell-${index}`} fill={index === 0 ? '#3b82f6' : '#8b5cf6'} />
                         ))}
                     </Bar>

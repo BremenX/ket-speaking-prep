@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef, useCallback } from 'react';
 import { Mic, Square, AlertCircle, CheckCircle2, Keyboard, Mic2, Volume2, Send } from 'lucide-react';
-import { IWindow } from '../types';
+import type { IWindow } from '../types';
 import { stopAllAudio } from '../services/geminiService';
 
 interface StudentBoxProps {

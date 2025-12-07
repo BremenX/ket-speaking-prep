@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { DailyPlan, SessionData, FullReport } from '../types';
+import type { DailyPlan, SessionData, FullReport } from '../types';
 import { playTextToSpeech, evaluateSession, stopAllAudio } from '../services/geminiService';
 import { Volume2, Eye, EyeOff, ArrowRight, Loader2, Flag, VolumeX, Check, PlayCircle } from 'lucide-react';
 import StudentBox from './StudentBox';
