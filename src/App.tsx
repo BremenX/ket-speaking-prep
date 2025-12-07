@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Calendar, UserCircle2, Mic2 } from 'lucide-react';
 import { generateDayPlan } from './services/geminiService';
-import { DailyPlan } from './types';
+import type { DailyPlan } from './types';
 import TestSession from './components/TestSession';
 
 const App: React.FC = () => {

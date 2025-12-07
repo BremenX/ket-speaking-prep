@@ -1,5 +1,5 @@
 import React from 'react';
-import { FullReport, EvaluationResult } from '../types';
+import type { FullReport, EvaluationResult } from '../types';
 import { CheckCircle2, XCircle, Lightbulb } from 'lucide-react';
 import { BarChart, Bar, XAxis, YAxis, Tooltip, ResponsiveContainer, Cell } from 'recharts';
 
